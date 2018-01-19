@@ -1,2 +1,8 @@
 # gvr-ys-sdk
-向GVR致敬
+VR SDK source code based on GVR implementation.
+
+* Acknowledgement:
+* 1  GVR
+* 2  ExoPlayer
+
+# Salute to GVR.
