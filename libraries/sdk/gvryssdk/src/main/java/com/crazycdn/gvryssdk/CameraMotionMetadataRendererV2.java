@@ -5,9 +5,7 @@ import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.FormatHolder;
 import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
-import com.google.vr.libraries.video.FrameRotationBuffer;
-import com.google.vr.libraries.video.MotionCoordinateSystem;
-import com.google.vr.sdk.widgets.video.deps.gP;
+import com.google.android.exoplayer2.util.ParsableByteArray;
 
 import java.io.IOException;
 
@@ -73,11 +71,13 @@ public class CameraMotionMetadataRendererV2 extends BaseRenderer {
     }
 
     private static float[] parseMetadata(byte[] var0, int var1) throws IOException {
-        gP var2 = new gP(var0, var1);
-        if(var2.t() != 0) {
+        ParsableByteArray var2 = new ParsableByteArray(var0, var1);
+        if(var2.readLittleEndianInt() != 0) {
             return null;
         } else {
-            float[] var3 = new float[]{Float.intBitsToFloat(var2.t()), Float.intBitsToFloat(var2.t()), Float.intBitsToFloat(var2.t())};
+            float[] var3 = new float[]{Float.intBitsToFloat(var2.readLittleEndianInt()),
+                    Float.intBitsToFloat(var2.readLittleEndianInt()),
+                    Float.intBitsToFloat(var2.readLittleEndianInt())};
             return var3;
         }
     }

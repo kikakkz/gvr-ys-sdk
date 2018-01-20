@@ -12,7 +12,6 @@ import android.util.AttributeSet;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.vr.sdk.widgets.common.VrWidgetRenderer.GLThreadScheduler;
 import com.google.vr.sdk.widgets.common.VrWidgetView;
-import com.google.vr.sdk.widgets.video.VrVideoEventListener;
 
 import java.io.IOException;
 

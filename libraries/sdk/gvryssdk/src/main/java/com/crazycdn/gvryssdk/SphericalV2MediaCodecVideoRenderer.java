@@ -12,8 +12,6 @@ import com.google.android.exoplayer2.drm.FrameworkMediaCrypto;
 import com.google.android.exoplayer2.mediacodec.MediaCodecSelector;
 import com.google.android.exoplayer2.video.MediaCodecVideoRenderer;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
-import com.google.vr.libraries.video.SampleTimestampBuffer;
-import com.google.vr.libraries.video.SphericalV2ProjectionDataListener;
 
 /**
  * Created by yunshang on 18-1-18.
@@ -21,7 +19,7 @@ import com.google.vr.libraries.video.SphericalV2ProjectionDataListener;
 
 public class SphericalV2MediaCodecVideoRenderer extends MediaCodecVideoRenderer {
     private static final int MAX_DROPPED_FRAME_COUNT_TO_NOTIFY = 1;
-    private static final String TAG = com.google.vr.libraries.video.SphericalV2MediaCodecVideoRenderer.class.getSimpleName();
+    private static final String TAG = SphericalV2MediaCodecVideoRenderer.class.getSimpleName();
     private final SampleTimestampBuffer sampleTimestampBuffer = new SampleTimestampBuffer();
     private SphericalV2ProjectionDataListener projectionListener;
     private Format inputFormat;

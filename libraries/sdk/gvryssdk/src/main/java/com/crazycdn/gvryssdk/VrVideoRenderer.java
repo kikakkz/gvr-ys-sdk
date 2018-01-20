@@ -3,8 +3,8 @@ package com.crazycdn.gvryssdk;
 import android.content.Context;
 import android.os.SystemClock;
 
+import com.crazycdn.gvryssdk.anon.SphericalMetadataOuterClass;
 import com.google.vr.sdk.widgets.common.VrWidgetRenderer;
-import com.google.vr.sdk.widgets.video.nano.SphericalMetadataOuterClass;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;

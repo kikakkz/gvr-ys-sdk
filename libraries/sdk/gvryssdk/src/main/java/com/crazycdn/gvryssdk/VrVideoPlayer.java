@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.Surface;
 
+import com.crazycdn.gvryssdk.anon.SphericalMetadataOuterClass;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.Format;
@@ -31,13 +32,6 @@ import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
-import com.google.vr.libraries.video.SphericalV2ProjectionDataListener;
-import com.google.vr.sdk.widgets.video.SphericalMetadataMP4;
-import com.google.vr.sdk.widgets.video.SphericalMetadataParser;
-import com.google.vr.sdk.widgets.video.SphericalV2MetadataParser;
-import com.google.vr.sdk.widgets.video.VideoTexture;
-import com.google.vr.sdk.widgets.video.VrVideoEventListener;
-import com.google.vr.sdk.widgets.video.nano.SphericalMetadataOuterClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;

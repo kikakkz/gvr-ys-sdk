@@ -17,9 +17,6 @@ import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
-import com.google.vr.libraries.video.FrameRotationBuffer;
-import com.google.vr.libraries.video.MotionCoordinateSystem;
-import com.google.vr.libraries.video.SphericalV2ProjectionDataListener;
 
 import java.util.ArrayList;
 

@@ -31,7 +31,7 @@ android {
     }
 
     sourceSets.main {
-        jniLibs.srcDirs = []
+        jniLibs.srcDirs = ["src/main/jni/libs"]
     }
 }
 
@@ -43,6 +43,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    compile 'com.google.vr:sdk-videowidget:1.120.0'
+    // compile 'com.google.vr:sdk-videowidget:1.120.0'
+    compile 'com.google.vr:sdk-common:1.120.0'
+    compile 'com.google.vr:sdk-audio:1.120.0'
+    compile 'com.google.vr:sdk-base:1.120.0'
+    compile 'com.google.vr:sdk-commonwidget:1.120.0'
+    compile 'com.google.vr:sdk-controller:1.120.0'
+
     compile 'com.google.android.exoplayer:exoplayer:2.6.1'
 }
